@@ -98,6 +98,72 @@ Non-functional requirements define *how the system should perform* rather than w
 
 ---
 
+
+## Use Case Diagrams
+
+**Use Case Diagrams** are a visual tool used in Requirement Analysis to describe how users (actors) interact with a system. They show *who* uses the system and *what* they can do within it. This helps stakeholders understand the system’s scope, boundaries, and user interactions clearly.
+
+### Benefits of Use Case Diagrams
+
+- Provide a **clear visualization** of system functionality.  
+- Help identify **actors**, **use cases**, and **system boundaries** early in development.  
+- Improve **communication** between developers, testers, and stakeholders.  
+- Serve as a foundation for writing **test cases** and **user stories**.  
+
+### Example: Booking Management System Use Case Diagram
+
+Below is a use case diagram representing the major actors and use cases for the booking management system.  
+
+**Actors:**  
+- User  
+- Admin  
+- Payment Gateway  
+
+**Use Cases:**  
+- Register / Log In  
+- Search and View Listings  
+- Create Booking  
+- Make Payment  
+- View Booking History  
+- Cancel Booking  
+- Manage Bookings (Admin)  
+- Generate Reports (Admin)  
+
+![Booking System Use Case Diagram](./alx-booking-uc.png)
+
+> **Note:** The image `alx-booking-uc.png` is created using a diagram tool like Draw.io, Lucidchart, or Figma, then exported and saved in this repository.
+
+---
+
+## Acceptance Criteria
+
+**Acceptance Criteria** are a set of predefined conditions that a software feature must meet to be considered complete and acceptable by the client or product owner. They define the boundaries of a user story and ensure that everyone understands what “done” means for a particular feature.
+
+### Importance of Acceptance Criteria
+
+- **Ensures Clarity:** They make it clear what functionality is expected from each feature.  
+- **Facilitates Testing:** QA teams use them to verify whether the implemented feature meets the required behavior.  
+- **Reduces Ambiguity:** They help developers and stakeholders align on what is acceptable for delivery.  
+- **Improves Quality:** Acceptance criteria ensure that features are tested and validated before deployment.  
+
+### Example: Checkout Feature in Booking Management System
+
+**User Story:**  
+As a user, I want to complete my booking by checking out securely so that my payment and reservation are confirmed.
+
+**Acceptance Criteria:**
+1. The user must be logged in to access the checkout page.  
+2. The checkout page must display the booking summary, including room details, total price, and selected dates.  
+3. The system must allow the user to choose a payment method (credit card, PayPal, etc.).  
+4. The system must validate the payment details before submission.  
+5. Upon successful payment, the system should:  
+   - Display a confirmation message.  
+   - Send a confirmation email to the user.  
+   - Update the booking status to “Confirmed.”  
+6. If payment fails, the system should display an error message and allow the user to retry.  
+
+---
+
 ## Summary
 
 Requirement Analysis is the cornerstone of successful software development. It helps transform user needs into actionable technical specifications, ensuring that the final product delivers true value.  
